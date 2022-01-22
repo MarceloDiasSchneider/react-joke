@@ -1,6 +1,7 @@
 import Comment from "./Comment";
 
 function Joke({ setup, punchline, upvotes, donwvotes, comments }) {
+  comments = comments ? comments.map((comment, key)=> <Comment key={key} comment={comment}/>) : '' ;
   return (
     <div>
       <h3 style={{ display: setup ? "block" : "none" }}>Setup: {setup}</h3>
@@ -13,9 +14,7 @@ function Joke({ setup, punchline, upvotes, donwvotes, comments }) {
           {donwvotes}
         </p>
       }
-      { comments && 
-        <Comment comments={comments} />
-      }
+      {comments && comments}
       <hr />
     </div>
   );

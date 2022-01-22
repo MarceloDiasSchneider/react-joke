@@ -1,10 +1,10 @@
-export default function Comment({ comments }) {
+export default function Comment({ comment }) {
   return (
     <div>
-      <h5>{comments[0].title}</h5>
-      <p>&ldquo;{comments[0].message}&rdquo;</p>
+      <h5>{comment.title}</h5>
+      <p>&ldquo;{comment.message}&rdquo;</p>
       <p>
-        <span className="mute">{comments[0].author}</span>
+        <span className="mute">{comment.author}</span>
       </p>
     </div>
   );
