@@ -7,6 +7,10 @@ function App() {
       <Joke
         setup="I got my daughter a fridge for her birthday."
         punchline="I can't wait to see her face light up when she opens it."
+        upvotes={10}
+        donwvotes={2}
+        comments={[{author: "Marcelo Schneider", title: "Good joke", message: "It's a good joke!!"}]}
+        
       />
       <Joke
         setup="How did the hacker escape the police?"
