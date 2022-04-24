@@ -14,7 +14,7 @@ function Joke({ setup, punchline, upvotes, donwvotes, comments }) {
     <div>
       <h3 style={{ display: setup ? "block" : "none" }}>Setup: {setup}</h3>
       {((punchline && isShown) || !setup) && <p>Punchline: {punchline}</p>}
-      {setup && <button onClick={toggleIsShown}>{ isShown ? "Hide punchline":  "Show punchline"}</button>}
+      {setup && <button onClick={toggleIsShown}>{ isShown ? "Hide":  "Show"} punchline</button>}
       {upvotes && donwvotes && (
         <p>
           <span className="mute">upvotes: </span>
